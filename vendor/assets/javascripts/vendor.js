@@ -4,4 +4,9 @@
 // It's not advisable to add code directly here, but if you do, it'll appear at the bottom of the
 // the compiled file.
 //
+//= require json2.js
+//= require jquery
+//= require underscore-1.1.6.js
+//= require backbone.js
+//= require backbone-localstorage.js
 //= require_tree .
