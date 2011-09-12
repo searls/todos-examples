@@ -6,6 +6,7 @@
 //
 //= require json2.js
 //= require jquery
+//= require jquery_ujs
 //= require underscore-1.1.6.js
 //= require backbone.js
 //= require_tree .
