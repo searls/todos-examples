@@ -1,5 +1,5 @@
 Todos::Application.routes.draw do
-  resources :todos
+  resources :todos, :defaults => { :format => 'json' }
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
