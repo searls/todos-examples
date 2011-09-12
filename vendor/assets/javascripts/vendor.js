@@ -8,5 +8,4 @@
 //= require jquery
 //= require underscore-1.1.6.js
 //= require backbone.js
-//= require backbone-localstorage.js
 //= require_tree .
