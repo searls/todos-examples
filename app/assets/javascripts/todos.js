@@ -1,7 +1,5 @@
 // An example Backbone application contributed by
-// [Jérôme Gravel-Niquet](http://jgn.me/). This demo uses a simple
-// [LocalStorage adapter](backbone-localstorage.html)
-// to persist Backbone models within your browser.
+// [Jérôme Gravel-Niquet](http://jgn.me/).
 
 // Load the application once the DOM is ready, using `jQuery.ready`:
 $(function(){
@@ -30,15 +28,10 @@ $(function(){
   // Todo Collection
   // ---------------
 
-  // The collection of todos is backed by *localStorage* instead of a remote
-  // server.
   window.TodoList = Backbone.Collection.extend({
 
     // Reference to this collection's model.
     model: Todo,
-
-    // Save all of the todo items under the `"todos"` namespace.
-    localStorage: new Store("todos"),
 
     // Filter down the list of all todo items that are finished.
     done: function() {
@@ -165,7 +158,7 @@ $(function(){
 
     // At initialization we bind to the relevant events on the `Todos`
     // collection, when items are added or changed. Kick things off by
-    // loading any preexisting todos that might be saved in *localStorage*.
+    // loading any preexisting todos
     initialize: function() {
       this.input    = this.$("#new-todo");
 
@@ -199,7 +192,7 @@ $(function(){
     },
 
     // If you hit return in the main input field, and there is text to save,
-    // create new **Todo** model persisting it to *localStorage*.
+    // create new **Todo** model persisting it
     createOnEnter: function(e) {
       var text = this.input.val();
       if (!text || e.keyCode != 13) return;
