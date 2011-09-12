@@ -9,6 +9,7 @@ $(function(){
 
   // Our basic **Todo** model has `text`, `order`, and `done` attributes.
   window.Todo = Backbone.Model.extend({
+    urlRoot: '/todos',
 
     // Default attributes for a todo item.
     defaults: function() {
@@ -29,6 +30,7 @@ $(function(){
   // ---------------
 
   window.TodoList = Backbone.Collection.extend({
+    url: '/todos',
 
     // Reference to this collection's model.
     model: Todo,
